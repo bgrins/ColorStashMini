@@ -4,7 +4,20 @@ function init() {
         flat:true,
         move: colorpickerMove
     });
+
+
+    console.log(1, 2, 3, ["This is an array", document.body]);
+    console.log({
+        "strong": ["b", "strong", "big"],
+        "emphasized": ["em", "i"]
+    });
     
+    
+    console.time("random timeout");
+    setTimeout(function() {
+        console.timeEnd("random timeout")
+    }, Math.random() * 1000)
+
 }
 
 function colorpickerMove(tinycolor) {

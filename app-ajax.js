@@ -6,6 +6,7 @@ function init() {
     });
     
     $("#get-random-color").click(function() {
+        console.time("ajax");
         $.get("random.php", ajaxDone);
     });
     
@@ -17,6 +18,7 @@ function ajaxDone(response) {
     $("#color").val(response);
     setBackground(tinycolor(response));
     console.log(arguments);
+    console.timeEnd("ajax");
 }
 
 function colorpickerMove(tinycolor) {

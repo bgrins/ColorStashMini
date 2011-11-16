@@ -19,8 +19,15 @@ function init() {
         
     }, false);
     
+    $(textbox).keydown(function(e) {
+        if (e.keyCode == 13) {
+            setColorpicker(this.value);
+            setBackground(this.value);
+        }
+    });
     
     $("#get-random-color").click(function() {
+        console.time("ajax");
         $.get("random.php", ajaxDone);
     });
     
@@ -31,6 +38,7 @@ function ajaxDone(response) {
     setTextbox(response);
     setColorpicker(response);
     setBackground(response);
+    console.timeEnd("ajax");
 }
 
 function colorpickerMove(tinycolor) {
