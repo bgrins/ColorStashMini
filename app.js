@@ -4,6 +4,7 @@ function init() {
         flat:true,
         move: colorpickerMove
     });
+    
 }
 
 function colorpickerMove(tinycolor) {
