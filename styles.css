@@ -11,9 +11,8 @@ background-size: 80px;
 
 
 #logo { text-decoration: none; color:#030; }
-#logo:hover { text-decoration: underline; }
-#logo em { font-style: normal; }
-#logo:hover em { color:green; }
+#logo:hover { text-decoration: underline; color: green;}
+
 h1 { 
     margin:0; 
     padding:4px 0 0 70px;
