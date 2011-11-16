@@ -9,6 +9,8 @@ background-size: 80px;
 
 }
 
+body.alternate { background-color: #aaa; }
+
 
 #logo { text-decoration: none; color:#030; }
 #logo:hover { text-decoration: underline; color: green;}
