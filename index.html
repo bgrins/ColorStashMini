@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
-<head><meta charset="utf-8">
-<title>ColorStash</title>
+<head>
+    <meta charset="utf-8">
+    <title>ColorStash</title>
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="css/styles.css" />
-<link rel="stylesheet" type="text/css" href="css/spectrum.css" />
-<link rel="icon" type="image/png" href="colorstash.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/spectrum.css" />
+    <link rel="icon" type="image/png" href="img/colorstash.png" />
 </head>
 
 <body class='ns'>
@@ -16,7 +17,6 @@
         <img src='img/colorstash.png' width='30' />
 	</div>
     <div class='btn-container'>
-
         <a class='btn btn-link' href='https://github.com/bgrins/ColorStashMini/'>View Project on Github</a>
         <a class='btn btn-primary' href='https://github.com/bgrins/ColorStashMini/archive/master.zip'>Download Code As Zip</a>
     </div>
@@ -26,21 +26,11 @@
             <input id='spec' />
         </div>
 
+        <div class="palette-container clearfix">
+            <ul><li></li></ul>
+        </div>
 
     </div> <!-- /container -->
-
-    <div class='container cf'>
-
-        <div id='input-container'>
-            <div>
-                <h2>Enter a color</h2>
-                <input id='color' />
-                <br />
-                <button id='set-color'>Set</button>
-                <button id='get-random-color'>Predict Favorite Color</button>
-            </div>
-        </div>
-    </div>
 
 	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
 	<script type="text/javascript" src="js/spectrum.js"></script>
